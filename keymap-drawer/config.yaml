@@ -86,10 +86,12 @@ parse_config:
 
     LCTRL: ctrl
     RCTRL: ctrl
-    LALT: ⌥
+    LALT: alt
     RALT: alt
     LGUI: gui
     RGUI: gui
+    LWIN: Win
+    RWIN: Win
     LCMD: ⌘
     RCMD: ⌘
     LSHFT: ⇧
@@ -104,7 +106,7 @@ parse_config:
 
     PG_UP: pg up
     PG_DN: pg dn
-    INS: Insert
+    INS: insert
     HOME: home
     END: end
     CAPS: caps lock

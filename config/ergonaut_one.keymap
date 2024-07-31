@@ -28,6 +28,9 @@
 #define GS(key) &kp LG(LS(key))
 #define HYPR(key) &kp LG(LA(LC(LS(key))))
 
+// Macro for Task Manager
+#define TSKMGR &kp LC(LS(ESC))
+
 // Macro for bluetooth connections
 #define BT_(btnum) &bt_key btnum btnum
 
@@ -74,7 +77,7 @@
             // => 
             bindings = <&kp EQUAL &kp GT &kp SPACE>;
         };
-
+        
         bt_clr: bluetooth_clear_macro {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -310,8 +313,8 @@
 //                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
             bindings = <
 // ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓            ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
-// ┃       ┃       ┃       ┃       ┃       ┃PrntScr┃            ┃       ┃  F7   ┃  F8   ┃  F9   ┃  F12  ┃ Calc  ┃
-      ___     ___     ___     ___     ___  &kp PSCRN               ___  &kp F7  &kp F8  &kp F9  &kp F12 &kp K_CALC
+// ┃TaskMgr┃       ┃       ┃       ┃       ┃PrntScr┃            ┃       ┃  F7   ┃  F8   ┃  F9   ┃  F12  ┃ Calc  ┃
+     TSKMGR   ___     ___     ___     ___  &kp PSCRN               ___  &kp F7  &kp F8  &kp F9  &kp F12 &kp K_CALC
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃ globe ┃ shift ┃  ctrl ┃  alt  ┃  win  ┃  alt  ┃            ┃       ┃  F4   ┃  F5   ┃  F6   ┃  F11  ┃       ┃
 &kp GLOBE &kp LSHFT &kp LCTRL &kp LALT &kp LWIN &kp RALT           ___   &kp F4  &kp F5  &kp F6  &kp F11   ___

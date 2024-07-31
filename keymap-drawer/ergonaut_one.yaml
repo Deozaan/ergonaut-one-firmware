@@ -36,11 +36,11 @@ layers:
   - {t: ., s: ':'}
   - {t: /, s: \}
   - {t: ']', h: ⇧}
-  - {t: '{', h: ⌥}
+  - {t: '{', h: alt}
   - {t: (, h: Numpad}
   - {t: sticky shift, h: Navigation, s: caps word}
   - {t: ␣, h: Symbols}
-  - {t: ), h: LWIN}
+  - {t: ), h: Win}
   - {t: '}', h: alt}
   Qwerty:
   - {t: ▽, type: trans}
@@ -144,8 +144,8 @@ layers:
   - GLOBE
   - Ctl+ A
   - ctrl
-  - ⌥
-  - LWIN
+  - alt
+  - Win
   - alt
   - '*'
   - '4'
@@ -165,14 +165,14 @@ layers:
   - '3'
   - '='
   - ⇥
-  - ⌥
+  - alt
   - {type: held}
   - {t: ▽, type: trans}
   - ','
-  - {t: '0', h: LWIN}
+  - {t: '0', h: Win}
   - {t: ., h: alt}
   Navigation:
-  - Insert
+  - insert
   - ''
   - ''
   - ''
@@ -187,8 +187,8 @@ layers:
   - GLOBE
   - ⇧
   - ctrl
-  - ⌥
-  - LWIN
+  - alt
+  - Win
   - alt
   - ''
   - ←
@@ -208,14 +208,14 @@ layers:
   - ''
   - ''
   - ⇧
-  - ⌥
+  - alt
   - {t: ▽, type: trans}
   - {type: held}
   - ␣
-  - {t: home, h: LWIN}
+  - {t: home, h: Win}
   - {t: end, h: alt}
   Function:
-  - ''
+  - Ctl+Sft+ esc
   - ''
   - ''
   - ''
@@ -230,8 +230,8 @@ layers:
   - GLOBE
   - ⇧
   - ctrl
-  - ⌥
-  - LWIN
+  - alt
+  - Win
   - alt
   - ''
   - F4
@@ -251,11 +251,11 @@ layers:
   - F3
   - F10
   - ⇧
-  - ⌥
+  - alt
   - {type: held}
   - {type: held}
   - F10
-  - {t: F11, h: LWIN}
+  - {t: F11, h: Win}
   - {t: F12, h: alt}
   Symbols:
   - '`'
@@ -276,8 +276,8 @@ layers:
   - '!'
   - '='
   - $
-  - ⌥
-  - LWIN
+  - alt
+  - Win
   - alt
   - ctrl
   - ''
@@ -298,7 +298,7 @@ layers:
   - '|'
   - '&'
   - {type: held}
-  - LWIN
+  - Win
   - alt
   Keyboard:
   - boot
