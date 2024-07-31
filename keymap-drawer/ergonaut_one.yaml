@@ -344,7 +344,7 @@ layers:
   - ''
   - ''
   Tmux & vim:
-  - ''
+  - Ctl+Sft+ esc
   - ''
   - ''
   - ''
