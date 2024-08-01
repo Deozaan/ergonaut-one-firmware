@@ -143,7 +143,7 @@ layers:
   - ⌫
   - GLOBE
   - Ctl+ A
-  - ctrl
+  - ⇧
   - alt
   - Win
   - alt
@@ -185,8 +185,8 @@ layers:
   - ''
   - ⌦
   - GLOBE
+  - Ctl+ A
   - ⇧
-  - ctrl
   - alt
   - Win
   - alt
@@ -215,7 +215,7 @@ layers:
   - {t: home, h: Win}
   - {t: end, h: alt}
   Function:
-  - Ctl+Sft+ esc
+  - Task Mgr
   - ''
   - ''
   - ''
@@ -344,7 +344,7 @@ layers:
   - ''
   - ''
   Tmux & vim:
-  - Ctl+Sft+ esc
+  - Task Mgr
   - ''
   - ''
   - ''

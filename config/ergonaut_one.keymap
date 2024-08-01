@@ -272,8 +272,8 @@
 // ┃  TAB  ┃       ┃       ┃numlock┃       ┃       ┃            ┃   /   ┃   7   ┃   8   ┃   9   ┃   -   ┃ BKSPC ┃
     &kp TAB   ___     ___ &tog LTOGN  ___     ___               &kp SLASH &kp N7 &kp N8 &kp N9 &kp MINUS &kp BSPC
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃ globe ┃ ctrl a┃  ctrl ┃  alt  ┃  win  ┃  alt  ┃            ┃   *   ┃   4   ┃   5   ┃   6   ┃   +   ┃ ENTER ┃
-&kp GLOBE CTRL(A) &kp LCTRL &kp LALT &kp LWIN &kp RALT          &kp STAR &kp N4 &kp N5  &kp N6 &kp PLUS &kp ENTER
+// ┃ globe ┃ ctrl a┃ shift ┃  alt  ┃  win  ┃  alt  ┃            ┃   *   ┃   4   ┃   5   ┃   6   ┃   +   ┃ ENTER ┃
+&kp GLOBE CTRL(A) &kp LSHFT &kp LALT &kp LWIN &kp RALT          &kp STAR &kp N4 &kp N5  &kp N6 &kp PLUS &kp ENTER
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃  ctrl ┃ ctrl z┃ ctrl x┃ ctrl c┃ ctrl d┃ ctrl v┃            ┃   :   ┃   1   ┃   2   ┃   3   ┃   =   ┃  TAB  ┃
    &kp LCTRL CTRL(Z) CTRL(X) CTRL(C) CTRL(D) CTRL(V)           &kp COLON &kp N1 &kp N2 &kp N3  &kp EQUAL &kp TAB
@@ -294,8 +294,8 @@
 // ┃  INS  ┃       ┃       ┃       ┃       ┃       ┃            ┃ Pg Up ┃       ┃   ↑   ┃       ┃       ┃  DEL  ┃
     &kp INS   ___     ___     ___     ___     ___               &kp PG_UP  ___    &kp UP   ___     ___   &kp DEL
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃       ┃ shift ┃  ctrl ┃  alt  ┃  win  ┃  alt  ┃            ┃       ┃   ←   ┃   ↓   ┃   →   ┃       ┃ ENTER ┃
-&kp GLOBE &kp LSHFT &kp LCTRL &kp LALT &kp LWIN &kp RALT           ___  &kp LEFT &kp DOWN &kp RIGHT ___  &kp ENTER
+// ┃       ┃ ctrl a┃ shift ┃  alt  ┃  win  ┃  alt  ┃            ┃       ┃   ←   ┃   ↓   ┃   →   ┃       ┃ ENTER ┃
+&kp GLOBE CTRL(A) &kp LSHFT &kp LALT &kp LWIN &kp RALT             ___ &kp LEFT &kp DOWN &kp RIGHT ___  &kp ENTER
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃  ctrl ┃ ctrl z┃ ctrl x┃ ctrl c┃ ctrl d┃ ctrl v┃            ┃ Pg Dn ┃       ┃       ┃       ┃       ┃ shift ┃
    &kp LCTRL CTRL(Z) CTRL(X) CTRL(C) CTRL(D) CTRL(V)            &kp PG_DN  ___     ___     ___     ___  &kp LSHFT
