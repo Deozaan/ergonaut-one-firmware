@@ -39,7 +39,7 @@ layers:
   - {t: '{', h: alt}
   - {t: (, h: Numpad}
   - {t: sticky shift, h: Navigation, s: caps word}
-  - {t: ␣, h: Symbols & Function}
+  - {t: ␣, h: Sym & Fn}
   - {t: ), h: Win}
   - {t: '}', h: alt}
   Qwerty:
@@ -257,7 +257,7 @@ layers:
   - F10
   - {t: F11, h: Win}
   - {t: F12, h: alt}
-  Symbols & Function:
+  Sym & Fn:
   - '`'
   - '!'
   - '@'
