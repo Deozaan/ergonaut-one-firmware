@@ -20,6 +20,7 @@ parse_config:
     '&kp LG(LA(LC(LS(M))))': mic mute
     '&kp LG(LS(N4))': scrn copy
     '&kp LG(LC(Q))': scrn lock
+    '&kp LC(LS(ESC))': Task Mgr
 
     '&out OUT_USB': USB
     '&out OUT_BLE': BLE
