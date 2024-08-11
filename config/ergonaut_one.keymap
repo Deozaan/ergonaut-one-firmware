@@ -331,7 +331,7 @@
 
         symbols {
 //                       ┏━━━━━━━━━━━━━━━┓
-            display-name = "Sym & Fn"    ;
+            display-name = "Symb & Func" ;
 //                       ┗━━━━━━━━━━━━━━━┛
             bindings = <
 // ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓            ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
@@ -357,8 +357,8 @@
 //                       ┗━━━━━━━━━━━━━━━┛
             bindings = <
 // ┏━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┓             ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
-// ┃   boot  ┃  Qwerty ┃         ┃ scrncpy ┃  bri +  ┃  vol +  ┃             ┃ dongle┃       ┃  USB  ┃       ┃       ┃ boot  ┃
-  &bootloader &to L_QRTY   ___     GS(N4) &kp C_BRI_UP &kp C_VOL_UP           &flash    ___ &out OUT_USB ___    ___  &bootloader
+// ┃   boot  ┃  Qwerty ┃         ┃ scrncpy ┃  bri +  ┃  vol +  ┃             ┃ dongle┃  USB  ┃  USB  ┃       ┃       ┃ boot  ┃
+  &bootloader &to L_QRTY   ___     GS(N4) &kp C_BRI_UP &kp C_VOL_UP        &flash &out OUT_USB &out OUT_USB ___ ___ &bootloader
 // ┣━━━━━━━━━╋━━━━━━━━━╋━━━━━━━━━╋━━━━━━━━━╋━━━━━━━━━╋━━━━━━━━━┫             ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃ scrn lk ┃  BT 1   ┃  BT 2   ┃  BT 3   ┃  BT 4   ┃  BT 5   ┃             ┃ Dvorak┃       ┃       ┃       ┃       ┃  ###  ┃
       GC(Q)     BT_(0)    BT_(1)    BT_(2)    BT_(3)    BT_(4)               &to L_DVRK ___     ___     ___     ___    I___I
