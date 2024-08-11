@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define L_CLMK 0 // Colemak Layer
-#define L_QRTY 1 // QWERTY Layer
+#define L_QRTY 0 // QWERTY Layer
+#define L_CLMK 1 // Colemak Layer
 #define L_DVRK 2 // Dvorak Layer
 #define LMO_N  3 // Numpad Momentary Layer
 #define LTOGN  4 // Numpad Toggle Layer
@@ -179,6 +179,28 @@
     keymap {
         compatible = "zmk,keymap";
 
+        Qwerty {
+//                       ┏━━━━━━━━━━━━━━━┓
+            display-name = "Qwerty"      ;
+//                       ┗━━━━━━━━━━━━━━━┛
+            bindings = <
+// ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓            ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
+// ┃  TAB  ┃   Q   ┃   W   ┃   E   ┃   R   ┃   T   ┃            ┃   Y   ┃   U   ┃   I   ┃   O   ┃   P   ┃ BKSPC ┃
+    &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T                &kp Y   &kp U   &kp I   &kp O   &kp P  &kp BSPC
+// ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
+// ┃ESC vim┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃            ┃   H   ┃   J   ┃   K   ┃   L   ┃  ' "  ┃RET kbd┃
+ &lt L_VIM ESC &kp A &kp S   &kp D   &kp F   &kp G                &kp H   &kp J   &kp K   &kp L &kp SQT &lt L_KBD RET
+// ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
+// ┃ [ ctrl┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃            ┃   N   ┃   M   ┃  , ;  ┃  . :  ┃  / \  ┃] shift┃
+&mt LCTRL LBKT &kp Z &kp X   &kp C   &kp V   &kp B                &kp N   &kp M  &comma   &dot &slash &mt RSHFT RBKT
+// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━┓    ┏━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
+//                             ┃ { alt ┃ ( num ┃ SHIFT ┃    ┃ SPACE ┃ ) win ┃ } alt ┃
+                &mt LALT LBRC &lt LMO_N LPAR &lsscw L_NAV 0 &lt L_SYM SPC &mt LWIN RPAR &mt RALT RBRC
+//                             ┗━━━━━━━┻━━━━━━━┫  nav  ┃    ┃  sym  ┣━━━━━━━┻━━━━━━━┛
+//                                             ┗━━━━━━━┛    ┗━━━━━━━┛
+            >;
+        };
+
         Colemak {
 //                       ┏━━━━━━━━━━━━━━━┓
             display-name = "Colemak"     ;
@@ -192,32 +214,10 @@
  &lt L_VIM ESC &kp A &kp R   &kp S   &kp T   &kp G                &kp M   &kp N   &kp E &kp I &kp O &lt L_KBD RET
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃ [ ctrl┃   Z   ┃   X   ┃   C   ┃   D   ┃   V   ┃            ┃   K   ┃   H   ┃  , ;  ┃  . :  ┃  / \  ┃] shift┃
-&mt LCTRL LBKT &kp Z &kp X   &kp C   &kp D   &kp V                &kp K   &kp H   &comma  &dot &slash &mt LSHFT RBKT
+&mt LCTRL LBKT &kp Z &kp X   &kp C   &kp D   &kp V                &kp K   &kp H   &comma  &dot &slash &mt RSHFT RBKT
 // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━┓    ┏━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 //                             ┃ { alt ┃ ( num ┃ SHIFT ┃    ┃ SPACE ┃ ) win ┃ } alt ┃
                 &mt LALT LBRC &lt LMO_N LPAR &lsscw L_NAV 0 &lt L_SYM SPC &mt LWIN RPAR &mt RALT RBRC
-//                             ┗━━━━━━━┻━━━━━━━┫  nav  ┃    ┃  sym  ┣━━━━━━━┻━━━━━━━┛
-//                                             ┗━━━━━━━┛    ┗━━━━━━━┛
-            >;
-        };
-
-        Qwerty {
-//                       ┏━━━━━━━━━━━━━━━┓
-            display-name = "Qwerty"      ;
-//                       ┗━━━━━━━━━━━━━━━┛
-            bindings = <
-// ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓            ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
-// ┃  TAB  ┃   Q   ┃   W   ┃   E   ┃   R   ┃   T   ┃            ┃   Y   ┃   U   ┃   I   ┃   O   ┃   P   ┃ BKSPC ┃
-     I___I   &kp Q   &kp W   &kp E   &kp R   &kp T                &kp Y   &kp U   &kp I   &kp O   &kp P   I___I
-// ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃ESC vim┃   A   ┃   S   ┃   D   ┃   F   ┃   G   ┃            ┃   H   ┃   J   ┃   K   ┃   L   ┃  ' "  ┃RET kbd┃
-     I___I   &kp A   &kp S   &kp D   &kp F   &kp G                &kp H   &kp J   &kp K   &kp L  &kp SQT  I___I
-// ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫            ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
-// ┃ [ ctrl┃   Z   ┃   X   ┃   C   ┃   V   ┃   B   ┃            ┃   N   ┃   M   ┃  , ;  ┃  . :  ┃  / \  ┃] shift┃
-     I___I   &kp Z   &kp X   &kp C   &kp V   &kp B                &kp N   &kp M   &comma  &dot    &slash  I___I
-// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━┓    ┏━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
-//                             ┃ { alt ┃ ( num ┃ SHIFT ┃    ┃ SPACE ┃ ) win ┃ } alt ┃
-                                 I___I   I___I   I___I        I___I   I___I   I___I
 //                             ┗━━━━━━━┻━━━━━━━┫  nav  ┃    ┃  sym  ┣━━━━━━━┻━━━━━━━┛
 //                                             ┗━━━━━━━┛    ┗━━━━━━━┛
             >;

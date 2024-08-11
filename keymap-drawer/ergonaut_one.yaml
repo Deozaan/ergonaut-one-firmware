@@ -1,4 +1,47 @@
 layers:
+  Qwerty:
+  - ⇥
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ⌫
+  - {t: esc, h: Tmux & vim}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - {t: ⏎, h: Keyboard}
+  - {t: '[', h: ctrl}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: /, s: \}
+  - {t: ']', h: ⇧}
+  - {t: '{', h: alt}
+  - {t: (, h: Numpad}
+  - {t: sticky shift, h: Navigation, s: caps word}
+  - {t: ␣, h: Symb & Func}
+  - {t: ), h: Win}
+  - {t: '}', h: alt}
   Colemak:
   - ⇥
   - Q
@@ -42,49 +85,6 @@ layers:
   - {t: ␣, h: Symb & Func}
   - {t: ), h: Win}
   - {t: '}', h: alt}
-  Qwerty:
-  - {t: ▽, type: trans}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ''''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
-  - {t: /, s: \}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Dvorak:
   - {t: ▽, type: trans}
   - ''''
